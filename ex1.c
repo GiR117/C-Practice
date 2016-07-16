@@ -1,4 +1,4 @@
-#include <stdio.h>
+// #include <stdio.h>
 int main(int argc, char *argv[])
 {
   puts("Hello world.");
@@ -6,6 +6,6 @@ int main(int argc, char *argv[])
   puts("A nice afternoon for learning.");
   puts("Good luck with your code");
   puts("Huzzah");
-  
+
   return 0;
 }
