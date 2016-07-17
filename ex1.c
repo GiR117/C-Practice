@@ -6,6 +6,6 @@ int main(int argc, char *argv[])
   puts("A nice afternoon for learning.");
   puts("Good luck with your code");
   puts("Huzzah");
-  
+
   return 0;
 }
