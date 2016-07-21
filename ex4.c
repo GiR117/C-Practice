@@ -1,4 +1,4 @@
-#include <stdio.h>
+  #include <stdio.h>
 
 /* Warning: This program is wrong on purpose. */
 
