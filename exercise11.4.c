@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+//exercise 4 chapter 11 of C in 24 hours do math and store result with pointers
+
+
+int main()
+{
+  int x = 5;
+  int y = 6;
+
+  int *pnt_x = &x;
+  int *pnt_y = &y;
+
+  *pnt_x  = (x * y);
+  
+  printf("X times Y = %d\n", *pnt_x);
+
+  *pnt_x = 5;
+
+  *pnt_x = *pnt_x * *pnt_y;
+
+  printf("Double check pnt_x times pnt_y = %d\n", *pnt_x);
+  return 0;
+}

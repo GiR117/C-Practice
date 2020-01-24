@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+//working with pointers
+
+int main()
+{
+  int x = 512;
+  int y = 1024;
+  int z = 2048;
+
+  int *pnt_x = &x;
+  int *pnt_y = &y;
+  int *pnt_z = &z;
+  
+  printf("X: address=%p, content address=%p content=%d\n", &pnt_x, pnt_x, *pnt_x);
+  printf("Y: address=%p, content address=%p content=%d\n", &pnt_y, pnt_y, *pnt_y);
+  printf("Z: address=%p. content address=%p content=%d\n", &pnt_z, pnt_z, *pnt_z);
+  
+  return 0;
+}
