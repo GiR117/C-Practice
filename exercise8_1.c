@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int x, y;
+char p[100];
+char binary(int num1);
+
+
+int main()
+{
+  x = 0xEFFF;
+  y = 0x1000;
+  char bin1[100];
+  char bin2[100];
+
+  bin1 = binary(x);
+  bin2 = binary(y);
+  
+  printf("x = %d, y = %d\n", x, y);
+  printf("In hex that is x = 0x%4X, y = 0x%4X\n", x, y);
+  printf("In binary thats x = %s, y = %s\n", *bin1, *bin2);
+  return 0;
+}
+
+char binary(num1)
+{
+  int i = 0;
+  do
+    {
+      if (num1 % 2 == 0)
+	p[i] = '0';
+      else
+	p[1] = '1';
+      i++;
+
+      num1 = num1 / 2;
+    } while (num1 > 0);
+  return *p;
+}

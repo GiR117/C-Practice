@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+unsigned char x = 0xEFFF;
+unsigned char y = 0x1000;
+
+int main()
+{
+  printf("x = %d or %u\n", !x, !x);
+  printf("y = %d or %u\n", !y, !y);
+
+  return 0;
+}
